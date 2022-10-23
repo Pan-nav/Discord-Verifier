@@ -52,6 +52,7 @@ tasks.withType(JavaCompile).configureEach {
 
 shadowJar {
     minimize()
+    relocate('kotlin.', 'xyz.alonefield.discordverifier.libs.kotlin.')
 }
 
 processResources {
